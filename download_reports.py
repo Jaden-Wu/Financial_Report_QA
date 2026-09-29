@@ -2,7 +2,7 @@
 
 Default: python download_reports.py
 Download: python download_reports.py --download
-Fill each report's url in report_sources.json before downloading missing PDFs.
+Verified public URLs are recorded in report_sources.json.
 Existing files are checked and never overwritten. No third-party packages required.
 """
 
@@ -29,11 +29,13 @@ def verify_pdf(data, report):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--download", action="store_true")
+    parser.add_argument("--output-dir", type=Path, default=BASE_DIR / "reports",
+                        help="PDF directory; defaults to the project's reports folder")
     args = parser.parse_args()
     manifest = json.loads(
         (BASE_DIR / "report_sources.json").read_text(encoding="utf-8")
     )
-    reports_dir = BASE_DIR / "reports"
+    reports_dir = args.output_dir.resolve()
     failures = 0
     for report in manifest["reports"]:
         filename = report["filename"]
@@ -62,7 +64,7 @@ def main():
                     raise ValueError("Redirect target must use HTTPS")
                 data = response.read()
             verify_pdf(data, report)
-            reports_dir.mkdir(exist_ok=True)
+            reports_dir.mkdir(parents=True, exist_ok=True)
             # Exclusive creation prevents accidental overwrite, including races.
             with target.open("xb") as output:
                 output.write(data)
@@ -70,6 +72,7 @@ def main():
         except (OSError, ValueError) as error:
             print(f"ERROR: {filename}: {error}")
             failures += 1
+    print(f"SUMMARY: {len(manifest['reports']) - failures}/{len(manifest['reports'])} passed; {failures} failed")
     return 1 if failures else 0
 
 
