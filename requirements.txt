@@ -1,0 +1,8 @@
+# Direct dependencies pinned to the local environment used for the recorded tests.
+pdfplumber==0.11.10
+numpy==2.5.3
+jieba==0.42.1
+rank-bm25==0.2.2
+scikit-learn==1.9.1
+joblib==1.6.0
+streamlit==1.64.0
