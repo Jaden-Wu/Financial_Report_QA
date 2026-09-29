@@ -1,6 +1,8 @@
 {
   "report_year": 2025,
-  "source_status": "Original download URLs have not yet been verified; url fields must be filled before downloading on another computer.",
+  "source_platform": "iFinD",
+  "source_basis": "The dataset owner identified iFinD as the download source.",
+  "source_status": "PDFs were already downloaded from iFinD. No publicly accessible direct download URLs have been verified. Existing local files can be checked; automatic downloads of missing files require verified URLs.",
   "reports": [
     {
       "filename": "北汽蓝谷25.pdf",
