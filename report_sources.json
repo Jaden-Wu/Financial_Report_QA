@@ -1,0 +1,66 @@
+{
+  "report_year": 2025,
+  "source_status": "Original download URLs have not yet been verified; url fields must be filled before downloading on another computer.",
+  "reports": [
+    {
+      "filename": "北汽蓝谷25.pdf",
+      "bytes": 1550668,
+      "sha256": "696f357d2401a3f3ccf4e319cebde0fbe52002c3cf0465cca26866e788478e40",
+      "url": null
+    },
+    {
+      "filename": "比亚迪25.pdf",
+      "bytes": 7533972,
+      "sha256": "710d8b2e08e37ba521f1c4071d2c3e2369d3cadabc21a45073215d9f72138b0b",
+      "url": null
+    },
+    {
+      "filename": "广汽25.pdf",
+      "bytes": 11117848,
+      "sha256": "fb3ce0149e4307360f658dd703500acdc652296e1b9306a4f5f5623e4059f043",
+      "url": null
+    },
+    {
+      "filename": "江淮25.pdf",
+      "bytes": 1635656,
+      "sha256": "eeebbb3e4a27da20d5b55da68c7ffa60beef92ea057d0454ab34101259579be4",
+      "url": null
+    },
+    {
+      "filename": "赛力斯25.pdf",
+      "bytes": 1885279,
+      "sha256": "4329532024a092c0ea02995a73ef15b9aa9d87325d461c0ecb28d46fc95b90fd",
+      "url": null
+    },
+    {
+      "filename": "上汽25.pdf",
+      "bytes": 1570114,
+      "sha256": "aca3b701a1d6c2d59c8063801c579c0b1a589fd7d183e13146e4790cce3d0874",
+      "url": null
+    },
+    {
+      "filename": "宇通25.pdf",
+      "bytes": 1101733,
+      "sha256": "9ae45f75fa60d2f17099b4add32690e3443e6c6eba3da3e24d91c9213fdb11a9",
+      "url": null
+    },
+    {
+      "filename": "长安25.pdf",
+      "bytes": 5392543,
+      "sha256": "3418328515d20826ac5c72bc3b0d6337e0ef82caf396ddd915cc5c3f6e86287c",
+      "url": null
+    },
+    {
+      "filename": "长城25.pdf",
+      "bytes": 4594479,
+      "sha256": "5f1ef188878af8d585bd6fb8151146a720fe1a943f04d2090a29905c15457cdb",
+      "url": null
+    },
+    {
+      "filename": "中通25.pdf",
+      "bytes": 1399031,
+      "sha256": "5d6663140e71f594ccfd73486f563fac981b206297ef4ab6f54f6a84c83cb887",
+      "url": null
+    }
+  ]
+}
